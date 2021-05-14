@@ -10,13 +10,22 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var toDos : [ToDo] = []
+    var toDos : [ToDoCD] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        func getToDos() {
+          if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let coreDataToDos = try? context.fetch(ToDoCD.fetchRequest()) as? [ToDoCD] {
+                if let theToDos = coreDataToDos {
+                    toDos = theToDos
+                    tableView.reloadData()
+          }
+        }
 
-        toDos = createToDos()
     }
+        }
     func createToDos() -> [ToDo] {
 
         let swift = ToDo()
@@ -31,7 +40,10 @@ class TableViewController: UITableViewController {
       }
     // MARK: - Table view data source
     
-
+    override func viewWillAppear(_ animated: Bool) {
+          getToDos()
+    }
+        
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return toDos.count
     }
@@ -102,10 +114,11 @@ class TableViewController: UITableViewController {
           addVC.previousVC = self
     }
         if let completeVC = segue.destination as? CompleteToDoViewController {
-          if let toDo = sender as? ToDo {
+          if let toDo = sender as? ToDoCD {
             completeVC.selectedToDo = toDo
             completeVC.previousVC = self
           }
+}
 }
 }
 }
