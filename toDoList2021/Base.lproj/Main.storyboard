@@ -37,10 +37,49 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="pYI-Ty-hQH" kind="show" identifier="moveToComplete" id="4VK-qF-Ia7"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDb-bQ-XVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847.82608695652175" y="133.92857142857142"/>
+        </scene>
+        <!--Complete To Do View Controller-->
+        <scene sceneID="tjl-iO-jr7">
+            <objects>
+                <viewController id="pYI-Ty-hQH" customClass="CompleteToDoViewController" customModule="toDoList2021" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4s0-qB-L1y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bR-XN-w3m">
+                                <rect key="frame" x="58" y="234" width="298" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mark this ToDo as complete!"/>
+                                <connections>
+                                    <action selector="completeTapped:" destination="pYI-Ty-hQH" eventType="touchUpInside" id="K1T-Cf-Cpe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ToDo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaU-j2-zyr">
+                                <rect key="frame" x="157" y="164" width="100" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jdB-Vc-JNw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WFN-R8-0Nf"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="AaU-j2-zyr" id="qe7-vA-Ls5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWu-4b-2l2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863.768115942029" y="877.90178571428567"/>
         </scene>
         <!--Add To Do View Controller-->
         <scene sceneID="6rF-2C-xVR">

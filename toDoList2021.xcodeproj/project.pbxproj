@@ -17,6 +17,7 @@
 		05C5EC09264E1D37007FE73E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5EC08264E1D37007FE73E /* TableViewController.swift */; };
 		05C5EC0B264E1DAC007FE73E /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5EC0A264E1DAC007FE73E /* ToDo.swift */; };
 		05C5EC0D264E21E9007FE73E /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5EC0C264E21E9007FE73E /* AddToDoViewController.swift */; };
+		05C5EC0F264E289B007FE73E /* CompleteToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C5EC0E264E289B007FE73E /* CompleteToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		05C5EC08264E1D37007FE73E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		05C5EC0A264E1DAC007FE73E /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		05C5EC0C264E21E9007FE73E /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		05C5EC0E264E289B007FE73E /* CompleteToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				05C5EBE3264E1C19007FE73E /* AppDelegate.swift */,
 				05C5EBE5264E1C19007FE73E /* SceneDelegate.swift */,
 				05C5EBE9264E1C19007FE73E /* Main.storyboard */,
+				05C5EC0E264E289B007FE73E /* CompleteToDoViewController.swift */,
 				05C5EC0C264E21E9007FE73E /* AddToDoViewController.swift */,
 				05C5EC0A264E1DAC007FE73E /* ToDo.swift */,
 				05C5EC08264E1D37007FE73E /* TableViewController.swift */,
@@ -212,6 +215,7 @@
 				05C5EBEE264E1C19007FE73E /* toDoList2021.xcdatamodeld in Sources */,
 				05C5EC0B264E1DAC007FE73E /* ToDo.swift in Sources */,
 				05C5EBE4264E1C19007FE73E /* AppDelegate.swift in Sources */,
+				05C5EC0F264E289B007FE73E /* CompleteToDoViewController.swift in Sources */,
 				05C5EBE6264E1C19007FE73E /* SceneDelegate.swift in Sources */,
 				05C5EC0D264E21E9007FE73E /* AddToDoViewController.swift in Sources */,
 				05C5EC09264E1D37007FE73E /* TableViewController.swift in Sources */,
